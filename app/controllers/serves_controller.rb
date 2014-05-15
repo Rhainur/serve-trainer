@@ -14,7 +14,7 @@ class ServesController < ApplicationController
   end
 
   def quiz
-    @serve_count = Serve.count
+    @serve_count = Serve.where(visible: true).count
   end
 
   def show_next
