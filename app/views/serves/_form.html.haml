@@ -26,6 +26,12 @@
     = f.label :player_grip
     = f.text_field :player_grip
   .field
+    = f.label :visible
+    = f.radio_button :visible, true
+    Yes
+    = f.radio_button :visible, false
+    No
+  .field
     = f.label :video, "File"
     = f.file_field :video
   .actions
