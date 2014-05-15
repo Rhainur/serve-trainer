@@ -24,7 +24,7 @@
     = f.select(:serve_direction, ['left', 'middle', 'right'])
   .field
     = f.label :player_grip
-    = f.select(:serve_direction, ['shakehand', 'penhold'])
+    = f.select(:player_grip, ['shakehand', 'penhold'])
   .field
     = f.label :visible
     = f.radio_button :visible, true
